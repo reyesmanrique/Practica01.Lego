@@ -1,18 +1,100 @@
-/* styles.css */
-.form-control-dark {
-    border-color: var(--bs-gray);
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Futura PT', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* navbar */
+.navbar {
+  background-color: #0057A5;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+/* Carousel  */
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .form-control-dark:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+
+  .navbar a {
+    margin: 10px 0;
   }
-  
-  .text-small {
-    font-size: 85%;
+
+  .header-title {
+    font-size: 1.5em;
   }
-  
-  .dropdown-toggle:not(:focus) {
-    outline: 0;
+
+  .header-text {
+    font-size: 1em;
   }
-  
+}
+
+/* Estilos para secciones adicionales */
+.additional-section {
+  margin-top: 40px;
+}
+
+.additional-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.additional-section p {
+  font-size: 1.2em;
+}
