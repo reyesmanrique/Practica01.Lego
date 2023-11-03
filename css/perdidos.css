@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family:'Trebuchet MS';
+    
+}
+
+
+#flip{
+    
+    background-color: #f6ec35;
+}
+
+#flip > img{
+   
+    width: 4em;
+    align-items: center;
+}
+
+.flecha {
+    width: 2em;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em 1em 0;
+    position: fixed;
+
+}
+
+#menu>ul {
+    background-color: #f6ec35;
+    height: 4em;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-block: auto;
+}
+
+#menu>ul>li {
+    list-style: none;
+    display: flex;
+}
+
+#menu>ul>li>a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+#menu>ul>li:first-child {
+    display: none;
+    
+}
+
+
+#menu>ul>li:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#menu>ul>li>a:hover {
+    color: #d11013;
+}
