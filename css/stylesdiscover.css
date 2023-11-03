@@ -2,20 +2,29 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family:'Trebuchet MS';
+    font-family: 'Montserrat', sans-serif;
     
 }
 
-#flip{
+#flip {
+    
     background-color: #f6ec35;
+    text-align: center;
 }
 
 #flip > img{
    
-    width: 5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  
+    width: 4em;
+    
+}
+
+.flecha {
+    width: 2em;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em 1em 0;
+    position: fixed;
+
 }
 
 #menu>ul {
@@ -44,6 +53,7 @@
     display: none;
     
 }
+
 
 #menu>ul>li:hover {
     transform: scale(1.2, 1.2);
@@ -76,7 +86,9 @@
 }
 
 #galeria{
+
     background-color: rgb(10, 18, 60);
+    
 }
 
 #galeria > h1 {
@@ -86,14 +98,23 @@
     text-align: center;
     font-weight: 800;
     padding-top: 2em;
+    font-weight: 500;
+}
+
+#titulo>h1{
+    background-color: rgb(10, 18, 60);
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 500;
+
 }
 
 #panel>menu>ul{
     margin-bottom: 0
     ;
 }
-
-
 
 #galeria > div {
     display: flex;
@@ -103,9 +124,10 @@
 
 #galeria > div > figure > figcaption {
     color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 5em;
     margin-top: 2em;
     margin-bottom: 2em;
+    margin-left: 2em;
     font-weight: 800;
 }
 
@@ -126,8 +148,221 @@
     
 }
 
-
 .carousel-item> img{
     width:100%;
     height:auto;
+}
+
+
+footer {
+    padding: 1em;
+    background-color:  #f6ec35;
+   
+}
+
+#programacion>figure>p{
+    font-size: 20px;
+    padding-right: 2em;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+}
+
+footer>div>figure {
+    width: 100px;
+    height: 100px;
+}
+
+footer>h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+footer>h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+}
+
+#redes>figure {
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+footer>h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+
+footer>h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+#btn-light{
+background-color: aqua;
+
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+   
+
+    #programacion > figure > p{
+        font-size: 10px;
+        color: white;
+    }
+
+    #galeria > h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    #titulo>h1{
+        font-size: 2em;
+     }
+}
+
+@media screen and (max-width: 992px) {
+    
+    #programacion>figure>p{
+        font-size: 10px;
+        padding-right: 1.5em;
+    }
+
+    #galeria > h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .flecha {
+        display: none;
+     
+     }
+
+     #titulo>h1{
+        font-size: 2em;
+        padding: 1em;
+     }
+
+     #redes>figure {
+        width: 30px;
+        height: 20px;
+        margin: 1em;
+      
+    }
+
+    #menu>ul {
+   
+    justify-content:center;
+
+}
+
+   #galeria> #programacion> figure >img{
+        padding: 0.5em;
+      }
+
+    
+
+      #galeria > div > figure > figcaption {
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        font-weight: 100;
+    }
+
+    #galeria>#programacion>figure>p{
+        display: none;
+    }
+
+      #galeria > div > figure > figcaption {
+        
+        font-size: 2em;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    #galeria > h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .flecha {
+       display: none;
+    
+    }
+
+    #galeria> #programacion> figure >img{
+        padding: 0.5em;
+      }
+
+      #galeria>#programacion>figure>p{
+        display: none;
+    }
+
+      #galeria > div > figure > figcaption {
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        font-weight: 100;
+    }
+
+    footer>h3 {
+        font-size: 0.7em;
+    }
+
+    footer>h4 {
+        padding-top: 2em;
+        font-size: 0.5em;
+    }
+
+    #menu>ul>li:first-child {
+        display: block;
+    }
+
+    #menu>ul>li:not(:first-child) {
+        display: none;
+    }
+
+    #menu>ul {
+        height: auto;
+        padding: 2em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu>ul:hover>li {
+        display: block;
+    }
+
+    
 }

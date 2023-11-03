@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#flip{
+    
+    background-color: #f6ec35;
+}
+
+#flip > img{
+   
+    width: 4em;
+    align-items: center;
+}
+
+.flecha {
+    width: 2em;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em 1em 0;
+    position: fixed;
+
+}
+
+#menu>ul {
+    background-color: #f6ec35;
+    height: 4em;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    margin-block: auto;
+}
+
+#menu>ul>li {
+    list-style: none;
+    display: flex;
+}
+
+#menu>ul>li>a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+#menu>ul>li:first-child {
+    display: none;
+    
+}
+
+
+#menu>ul>li:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#menu>ul>li>a:hover {
+    color: #d11013;
+}
+
+
+
+
+footer {
+    padding: 1em;
+    background-color:  #f6ec35;
+   
+
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+}
+
+footer>div>figure {
+    width: 100px;
+    height: 100px;
+}
+
+footer>h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+footer>h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+}
+
+#redes>figure {
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+
+footer>h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+
+footer>h4 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
