@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lego Oficial</title>
+  <title>LEGO</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 </head>
 
@@ -29,7 +31,7 @@
                   
                   <li>
                       <a href="index.html">
-                          HOME
+                          INICIO
                       </a>
                   </li>
                  
@@ -49,10 +51,8 @@
       </div>
 
 <!-- Carousel -->
-<div id="carouselExample" class="carousel slide"  data-ride="carousel">
+<div id="carouselExample" class="carousel slide carousel-bg" data-ride="carousel">
   <div class="carousel-inner">
-
-    <!-- img carousel -->
     <div class="carousel-item active">
       <img src="img/Lego1.png" class="d-block w-50 img-carousel" alt="Lego Image 1">
     </div>
@@ -76,6 +76,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 
 <!-- Título -->
 <div class="container">
@@ -153,13 +154,27 @@
   <a href="discover.html" class="btn btn-discover">Descubrir</a>
 </div>
 
-
 <!-- Footer -->
-<footer class="footer">
+<footer>
   <div class="container">
-    <p>&copy; 2023 Lego. Todos los derechos reservados.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Contacto</h4>
+        <p>Email: info@lego.com</p>
+        <p>Teléfono: +123 456 789</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Síguenos en redes sociales</h4>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+
 
 <!-- Bootstrap JavaScript -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -180,7 +195,36 @@
   AOS.init();
 </script>
 
+<!-- flecha -->
+<div id="scroll-to-top" class="animated-arrow">
+  <a href="#top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</div>
+
+<script>
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    const arrow = document.getElementById("scroll-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      arrow.style.display = "block";
+    } else {
+      arrow.style.display = "none";
+    }
+  }
+
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  });
+</script>
+
 
 </body>
+
+
 </html>
 
