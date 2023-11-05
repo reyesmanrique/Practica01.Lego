@@ -62,7 +62,7 @@ body {
 }
   
 #menu>ul>li>a{
-    color: rgb(0, 0, 0);
+    color: #212529;
     text-decoration: none;
     font-size: 1em;
     font-weight: 700;
@@ -85,41 +85,98 @@ body {
 
 
 
-/* Preguntas */
+/* Preguntas y botones */
 #contenido-perdidos {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/lego-piezas-fondo.jpg') center/cover fixed; 
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px; 
-    margin-top: 50px; 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/lego-piezas-fondo.jpg') center/cover fixed; 
+  color: #ffff;
+  text-align: center;
+  padding: 200px 20px;  
 }
 
-/* Preguntas y botones */
 .pregunta {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: -1em;
 }
 
 .botones {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-bottom: 40px; 
 }
 
 .boton {
-    margin: 0 10px 10px 10px;
-    padding: 10px 20px;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #fff;
-    background-color: #d11013;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+  margin: 0 10px ;  
+  padding: 15px 20px; 
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ffff;
+  background-color: #d11013;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .boton:hover {
-    background-color: #f8282f;
+  background-color: #f8282f;
 }
+/* segunda pregunta */
+#contenido-perdidos .pregunta:nth-child(3) {
+  margin-top: 50px; 
+}
+
+
+/* 1-5 y 5+ */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+}
+
+.galeria img {
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+}
+
+
+.galeria::before {
+  content: attr(data-title);
+  display: block;
+  text-align: center;
+  color: #333; 
+  font-size: 2em; 
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: absolute;
+  top: -60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transform-origin: center bottom;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
 
 /* Contacto */
 #contacto {
@@ -182,7 +239,7 @@ body {
 
 
 
-  /*  flecha */
+/*  flecha */
 #scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -211,7 +268,7 @@ body {
   }
   
   
-  /* Animación scroll-to-top */
+  /* Animación flecha */
   @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
@@ -234,7 +291,7 @@ body {
   
   /* Footer */
   footer {
-    background-color: #343a40;
+    background-color: #0057A5;
     color: #fff;
     padding: 3em 0;
     text-align: center;

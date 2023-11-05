@@ -62,7 +62,7 @@ body {
 }
 
 #menu>ul>li>a{
-  color: rgb(0, 0, 0);
+  color: #212529;
   text-decoration: none;
   font-size: 1em;
   font-weight: 700;
@@ -224,7 +224,7 @@ body {
   font-size: 1em;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: #ffff;
   background-color: #d11013;
   border-radius: 5px;
   overflow: hidden;
@@ -260,7 +260,7 @@ body {
   width: 50px;
   height: 50px;
   background-color: #d11013;
-  color: #fff;
+  color: #ffff;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -293,8 +293,8 @@ body {
 
 /* Footer */
 footer {
-  background-color: #343a40;
-  color: #fff;
+  background-color: #0057A5;
+  color: #ffff;
   padding: 3em 0;
   text-align: center;
 }
@@ -318,7 +318,7 @@ footer p {
 }
 
 .social-icons a {
-  color: #fff;
+  color: #ffff;
   text-decoration: none;
   font-size: 1.5em;
 }

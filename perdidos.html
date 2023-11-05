@@ -52,49 +52,86 @@
 
 <!-- Preguntas -->
 <section id="contenido-perdidos">
-    <div class="pregunta">
-      ¿Cuantas piezas necesitas?
-    </div>
-    <div class="botones">
-      <a href="#" class="boton">1-5</a>
-      <a href="#" class="boton">+5</a>
-    </div>
-    <div class="pregunta">
-      ¿Necesitas ayuda?
-    </div>
-    <div class="botones">
-      <a href="#" class="boton">Contáctanos</a>
-    </div>
- </section>
+  <div class="pregunta" data-aos="fade-up" data-aos-duration="800">
+    ¿Cuantas piezas necesitas?
+  </div>
+  <div class="botones">
+    <a href="#galeria1-5" class="boton">1-5</a>
+    <a href="#galeria5+" class="boton">+5</a>
+  </div>
+  <div class="pregunta" data-aos="fade-up" data-aos-duration="800">
+    ¿Necesitas ayuda?
+  </div>
+  <div class="botones">
+    <a href="#contacto" class="boton">Contáctanos</a>
+  </div>
+</section>
 
- <!-- Contacto -->
+
+
+<!-- Boton 1-5 -->
+<section id="galeria1-5" class="galeria" data-title="1-5 Piezas">
+  <img src="img/2456_blue.png" alt="Imagen 1">
+  <img src="img/3065_trans-green.png" alt="Imagen 2">
+  <img src="img/3622_red.png" alt="Imagen 3">
+</section>
+
+<!-- Boton 5+ -->
+<section id="galeria5+" class="galeria" data-title="+5 Piezas">
+  <img src="img/piezas-lego.jpg" alt="Imagen 4">
+  <img src="img/piezas-lego2.jpg" alt="Imagen 5">
+  <img src="img/piezas-lego3.jpg" alt="Imagen 6">
+</section>
+
+
+
+<!-- Contacto -->
 <section id="contacto" data-aos="fade-up" data-aos-duration="1000">
-    <div class="container">
+  <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2>Contacto</h2>
-          <form id="contacto-form">
-            <div class="form-group" data-aos="fade-up" data-aos-duration="800">
-              <label for="nombre">Nombre:</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group" data-aos="fade-up" data-aos-duration="800">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group" data-aos="fade-up" data-aos-duration="800">
-              <label for="mensaje">Mensaje:</label>
-              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" data-aos="fade-up" data-aos-duration="1000">Enviar Mensaje</button>
-          </form>
-        </div>
+          <div class="col-md-8 mx-auto">
+              <h2>Contacto</h2>
+              <form id="contacto-form">
+                  <div class="form-group" data-aos="fade-up" data-aos-duration="800">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  </div>
+                  <div class="form-group" data-aos="fade-up" data-aos-duration="800">
+                      <label for="email">Correo Electrónico:</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group" data-aos="fade-up" data-aos-duration="800">
+                      <label for="mensaje">Escríbenos y nos pondremos en contacto contigo lo antes posible</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#agradecimientoModal">Enviar Mensaje</button>
+              </form>
+          </div>
       </div>
-    </div>
-  </section>
-  
-  
-  
+  </div>
+</section>
+
+<!-- mensaje POPUP -->
+<div class="modal fade" id="agradecimientoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¡Gracias por tu mensaje!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Hemos recibido tu mensaje. ¡Nos pondremos en contacto contigo pronto!
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <a href="index.html" class="btn btn-primary">Volver a Inicio</a>
+          </div>
+      </div>
+  </div>
+</div>
+
   
 
 
@@ -103,16 +140,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h4>Contacto</h4>
-          <p>Email: info@lego.com</p>
-          <p>Teléfono: +123 456 789</p>
+          <h4>Atención al cliente</h4>
+          <p>Email: atencionalcliente@lego.com</p>
+          <p>Política de privacidad</p>
         </div>
         <div class="col-md-6">
           <h4>Síguenos en redes sociales</h4>
           <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/LEGOEsp/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/LEGO_Group"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/lego"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
