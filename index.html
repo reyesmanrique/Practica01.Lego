@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lego Oficial</title>
+  <title>LEGO</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://kit.fontawesome.com/5ab5a6a441.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="js/script.js"></script> 
 
 </head>
 
@@ -24,12 +25,12 @@
               
               <ul>
                   <li>
-                      <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
                   </li>
                   
                   <li>
                       <a href="index.html">
-                          HOME
+                          INICIO
                       </a>
                   </li>
                  
@@ -49,10 +50,8 @@
       </div>
 
 <!-- Carousel -->
-<div id="carouselExample" class="carousel slide"  data-ride="carousel">
+<div id="carouselExample" class="carousel slide carousel-bg" data-ride="carousel">
   <div class="carousel-inner">
-
-    <!-- img carousel -->
     <div class="carousel-item active">
       <img src="img/Lego1.png" class="d-block w-50 img-carousel" alt="Lego Image 1">
     </div>
@@ -77,11 +76,17 @@
   </a>
 </div>
 
+
 <!-- Título -->
-<div class="container">
-  <h1 class="header-title">Bienvenido a Lego</h1>
-  <p class="header-text">Esta navidad explora el mundo de la construcción y la creatividad.</p>
-</div>
+
+  <div class="header-title">
+
+    Bienvenido a Lego
+  
+  </div>
+  
+    <p class="header-text">Esta navidad explora el mundo de la construcción y la creatividad.</p>
+
 
 <!-- Producto 1 -->
 <div class="additional-section container parallax-section" data-aos="fade-up">
@@ -91,13 +96,31 @@
     </div>
     <div class="col-md-6">
       <h2>LEGO® - Set de temporada Casa Club Elfo</h2>
-      <p>Contiene 1197 piezas + instrucciones<br>
-        18+ años<br>
+      <p>Contiene 1197 piezas + instrucciones
+        18+ años
         10275
       </p>
     </div>
   </div>
 </div>
+
+
+<div class="additional-section container parallax-section" data-aos="fade-up">
+  <div class="row">
+    <div class="col-md-6 order-md-2">
+      <h2>LEGO® - Creator Expert - Tren navideño</h2>
+      <p>Contiene 734 piezas + instrucciones<br>
+        12+ años<br>
+        10254
+      </p>
+    </div>
+    <div class="col-md-6 order-md-1">
+      <img src="img/navidaddd.webp" class="img-fluid img-product parallax-image" alt="Lego Image 8" data-aos="zoom-in">
+    </div>
+  </div>
+</div>
+
+
 
 <!-- Producto 2 -->
 <div class="additional-section container parallax-section" data-aos="fade-up">
@@ -153,13 +176,26 @@
   <a href="discover.html" class="btn btn-discover">Descubrir</a>
 </div>
 
-
 <!-- Footer -->
-<footer class="footer">
+<footer>
   <div class="container">
-    <p>&copy; 2023 Lego. Todos los derechos reservados.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Atención al cliente</h4>
+        <p>Email: atencionalcliente@lego.com</p>
+        <p>Política de privacidad</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Síguenos en redes sociales</h4>
+        <ul class="social-icons">
+          <li><a href="https://twitter.com/LEGO_Group"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/lego"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+
 
 <!-- Bootstrap JavaScript -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -180,7 +216,35 @@
   AOS.init();
 </script>
 
+<!-- flecha -->
+<div id="scroll-to-top" class="animated-arrow">
+  <a href="#top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</div>
+
+<script>
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    const arrow = document.getElementById("scroll-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      arrow.style.display = "block";
+    } else {
+      arrow.style.display = "none";
+    }
+  }
+
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  });
+</script>
+
 
 </body>
-</html>
 
+
+</html>

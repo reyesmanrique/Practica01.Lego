@@ -4,5 +4,3 @@ window.onload = function () {
         duration: 1500,
     });
 };
-
-
