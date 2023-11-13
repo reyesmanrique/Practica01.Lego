@@ -1,27 +1,10 @@
 * {
+  font-family:'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family:'Montserrat', sans-serif;
+ 
 }
-
-body, h1, p, #menu>ul>li>a {
-  font-family: 'Montserrat', sans-serif;
-}
-
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-}
-
 /* Logo y Menu */
 #flip {
   background-color: #f6ec35;
@@ -38,7 +21,7 @@ body {
 #menu {
   display: none;
   background-color: #f6ec35;
-  font-family: 'Montserrat', sans-serif;
+
 }
 
 #menu.show {
@@ -67,16 +50,11 @@ body {
   font-size: 1em;
   font-weight: 700;
   margin: 0 15px;
-  font-family: 'Montserrat', sans-serif;
+
 }
 
 #menu>ul>li:first-child {
-  display: none;
-  
-}
-
-#menu>ul>li:hover {
-  transform: scale(1.2, 1.2);
+  display: none;  
 }
 
 #menu>ul>li>a:hover {
@@ -85,18 +63,18 @@ body {
 
 /* Título */
 .header-title {
+  font-weight: bold;
   font-size: 3em; 
   text-align: center;
-  margin: 20px;
-  color: #0057A5;
-  font-weight: bold;
+  margin: 2em;
+  color: #002fa5;
   animation: bounce 2s infinite; 
 }
 
 .header-text {
-  font-size: 1em; 
+  font-size: 2em; 
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 4em;
   font-weight: 900;
   animation: fadeInUp 2s ease-out; 
 }
@@ -128,37 +106,30 @@ body {
 /* Carousel */
 .carousel-bg {
   background: url('../img/stars-background.jpg') center/cover no-repeat;
-  position: relative;
 }
 
 .carousel-inner {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center; 
   text-align: center;
-  height: 80vh; 
+  height: 80vh;
   overflow: hidden;
 }
 
 .carousel-item {
-  display: flex;
+
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: transform 0.5s ease;
 }
 
-.carousel-item img {
-  max-width: 100%;
-  height: auto;
-}
-
 .carousel-inner img {
-  max-width: 100%;
-  max-height: 100%; 
-  width: auto;
-  height: auto;
-  margin: auto; 
+  
+  margin: auto;
+  margin-top: 2em;
+  
 }
 
 #carouselExample {
@@ -181,13 +152,9 @@ body {
 
 .additional-section h2 {
   font-size: 2em;
-  margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.additional-section p {
-  font-size: 1.2em;
-}
 
 /* Imgs de Productos  */
 .img-product {
@@ -200,11 +167,12 @@ body {
 .img-product:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+ 
 }
 
 /* Hover en títulos de productos */
 .additional-section h2:hover {
-  color: #d11013; 
+  color: #ff0000; 
 }
 
 /*Boton Descubre Más */
@@ -232,8 +200,8 @@ body {
 }
 
 .btn-discover:hover {
-  animation: bounce 0.6s infinite alternate;
-  background-color: #f8282f; 
+  animation: bounce 2s infinite alternate;
+  color: white;
 }
 
 @keyframes bounce {
@@ -262,7 +230,7 @@ body {
   background-color: #d11013;
   color: #ffff;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -293,7 +261,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #0057A5;
+  background-color: #002fa5;
   color: #ffff;
   padding: 3em 0;
   text-align: center;
@@ -324,155 +292,203 @@ footer p {
 }
 
 .social-icons a:hover {
-  color: #d11013;
+  color: #ff0004;
 }
-
-
 
 
 
 /* Responsive */
-@media screen and (max-width: 1200px) {
-  /* Títulos */
-  .header-title {
-    font-size: 2.5em;
-  }
 
-  .header-text {
-    font-size: 1.2em;
-  }
 
-  /* Menú */
-  #flip > img {
-    width: 4em;
-  }
+@media screen and (max-width: 1391px) {
 
-  #menu>ul {
-    height: 3em;
-  }
-
-  #menu>ul>li>a {
-    font-size: 0.9em;
-  }
-
-  /* Carousel */
   .carousel-inner {
-    height: 60vh;
+    height: 90vh;
+   
   }
-
-  .video-carousel {
-    height: 100%;
+  .carousel-inner img {
+  
+    margin: auto;
+    margin-top: 3.5em;
+    
   }
-
-  /* Productos */
   .additional-section h2 {
-    font-size: 1.8em;
+    font-size: 2.8em;
+    font-weight: 700;
   }
 
-  .additional-section p {
-    font-size: 1em;
+  .additional-section > p {
+    font-size: 4em;
   }
-
-  .img-product {
-    max-width: 80%;
-  }
-
-  /* Descubre Más */
-  .discover-section p {
-    font-size: 1.2em;
-  }
-
-  .btn-discover {
-    padding: 8px 16px;
-    font-size: 0.9em;
-  }
+ 
 }
 
-@media screen and (max-width: 992px) {
-  /* Menú */
-  #flip > img {
-    width: 3em;
+@media screen and (max-width: 1230px) {
+
+  .header-text {
+    font-size: 1.5em; 
+  
+  } 
+
+  .header-title {
+    margin-bottom: 1em;
   }
 
-  #menu>ul {
-    height: 2.5em;
-  }
-
-  #menu>ul>li>a {
-    font-size: 0.8em;
-  }
-
-  /* Carousel */
   .carousel-inner {
-    height: 50vh;
+    height: 70vh;
+   
   }
+ 
+}
+@media screen and (max-width: 999px) {
 
-  .video-carousel {
-    height: 100%;
-  }
-
-  /* Productos */
   .additional-section h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
+    font-weight: 700;
   }
 
-  .additional-section p {
-    font-size: 0.9em;
+  .additional-section > p {
+    font-size: 4em;
   }
 
-  .img-product {
-    max-width: 70%;
+  #menu.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-inner {
+    height: 70vh; 
+   
   }
 
-  /* Descubre Más */
-  .discover-section p {
-    font-size: 1em;
+  .carousel-inner img {
+  
+    margin: auto;
+    margin-top: 6em;
+    
+  }
+ 
+  .header-title {  
+    margin: 0.5em;
+  }
+  .header-text {
+    font-size: 1.5em; 
+    margin: 1em;
+  } 
+
+  .row{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .additional-section h2 {
+    font-size: 2em;
+    font-weight: 700;
   }
 
-  .btn-discover {
-    padding: 6px 12px;
-    font-size: 0.8em;
+  .additional-section > p {
+    font-size: 4em;
   }
+
+}
+
+@media screen and (max-width: 790px) {
+
+  .carousel-inner {
+    height: 60vh; 
+   
+  }
+   
+  .additional-section h2 {
+
+    font-size: 1.7em;
+    margin-top: 50px;
+    
+  }
+  .additional-section h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+  }
+
+  .additional-section > p {
+    font-size: 4em;
+  }
+ 
+}
+
+@media screen and (max-width: 590px) {
+
+  .carousel-inner {
+    height: 60vh; 
+   
+  }
+  .carousel-inner img {
+  
+    margin: auto;
+    margin-top: 3em;
+    
+  }
+
+  .row{
+    padding: 1em;
+  }
+
+  #menu.show {
+    font-size: 13px;
+  }
+ 
 }
 
 @media screen and (max-width: 576px) {
+
+
   /* Títulos */
   .header-title {
     font-size: 2em;
   }
 
+  .carousel-inner img {
+  
+    margin: auto;
+    margin-top: 2em;
+    
+  }
+
   .header-text {
-    font-size: 0.9em;
+    font-size: 1.9em;
   }
 
   /* Menú */
-  #flip > img {
-    width: 2.5em;
-  }
-
+ 
   #menu>ul {
-    height: 2em;
-  }
-
-  #menu>ul>li>a {
-    font-size: 0.7em;
+    height: 4em;
   }
 
   /* Carousel */
   .carousel-inner {
-    height: 40vh;
+    height: 35vh;
   }
+
+
 
   .video-carousel {
     height: 100%;
   }
 
   /* Productos */
-  .additional-section h2 {
-    font-size: 1.2em;
+ 
+
+  .img-product {
+    max-width: 70%;
   }
 
-  .additional-section p {
+  
+  .discover-section p {
+    font-size: 2em;
+  }
+
+  .btn-discover {
+    padding: 6px 12px;
     font-size: 0.8em;
   }
 
@@ -480,13 +496,85 @@ footer p {
     max-width: 60%;
   }
 
-  /* Descubre Más */
-  .discover-section p {
-    font-size: 0.8em;
-  }
-
+  
   .btn-discover {
     padding: 4px 8px;
     font-size: 0.7em;
   }
+
+}
+
+@media screen and (max-width: 418px) {
+
+  .carousel-inner img {
+  
+    margin: auto;
+    margin-top: 3em;
+    
+  }
+  #menu.show {
+    font-size: 13px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+ 
+  .carousel-inner {
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    height: 35vh; 
+    overflow: hidden;
+  }
+
+ 
+} 
+  @media screen and (max-width: 350px) {
+
+    .carousel-inner img {
+    
+      margin: auto;
+      margin-top: 2em;
+      
+    }
+  
+    .carousel-inner {
+      display: block;
+      justify-content: center;
+      align-items: center; 
+      text-align: center;
+      height: 25vh; 
+      overflow: hidden;
+    }
+    
+    .header-title {
+      font-size: 1.1em; 
+      
+    }
+
+    .header-text {
+      font-size: 0.6em; 
+      text-align: center;
+      margin-left: 1em;
+      font-weight: 700;
+      margin-right: 1em;
+    
+    }
+
+    .additional-section h2 {
+      font-size: 2.8em;
+      font-weight: 700;
+    }
+  
+    .additional-section > p {
+      font-size: 4em;
+    }
+
+    .header-text {
+      font-size: 4em; 
+      
+    }
+
 }
